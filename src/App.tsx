@@ -6,15 +6,15 @@ import NewFeedback from "./pages/new feedback/newFeedback";
 
 const router = createBrowserRouter([
 	{
-		path: "/",
+		path: "/Explorer-Product-Feedback-React-Ts/",
 		element: <Homepage />,
 	},
 	{
-		path: "/new",
+		path: "/Explorer-Product-Feedback-React-Ts/new",
 		element: <NewFeedback />,
 	},
-	{path: "/detail/:id", element: <Detail />},
-	{path: "/edit/:id", element: <EditFeedback />},
+	{path: "/Explorer-Product-Feedback-React-Ts/detail/:id", element: <Detail />},
+	{path: "/Explorer-Product-Feedback-React-Ts/edit/:id", element: <EditFeedback />},
 ]);
 
 function App() {
