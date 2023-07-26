@@ -1,0 +1,117 @@
+@import "../../style/mixins";
+
+.comment {
+   display: grid;
+   grid-template-rows: auto auto;
+   grid-template-columns: 40px auto;
+
+   column-gap: 32px;
+   row-gap: 16px;
+   margin-bottom: 24px;
+
+   img {
+      border-radius: 50%;
+   }
+
+   @media(max-width: 425px) {
+      column-gap: 16px;
+      grid-template-columns: 40px auto;
+
+      * {
+         font-size: 13px !important;
+      }
+   }
+}
+
+.pfp {
+   grid-column: 1/2;
+   grid-row: 1/2;
+}
+
+// .content {
+//    width: 100%;
+//    display: flex;
+//    flex-direction: column;
+//    gap: 17px;
+// }
+
+.name {
+   font-size: 14px;
+   font-weight: 700;
+   letter-spacing: -0.19px;
+   line-height: 20px;
+   color: var(--marian-blue);
+}
+
+.username {
+   font-size: 14px;
+   letter-spacing: 0px;
+   line-height: 20px;
+   color: var(--glaucous);
+}
+
+.commentContent {
+   font-size: 15px;
+   color: var(--glaucous);
+
+   grid-column: 2/3;
+
+   @media(max-width: 425px) {
+      grid-column: 1/3;
+   }
+}
+
+
+
+.replies {
+   padding-left: 50px;
+
+   @media (max-width: 425px) {
+      padding-left: 23px;
+   }
+}
+
+.replyingTo {
+   font-weight: 700;
+   color: var(--veronica);
+}
+
+.reply {
+   @include body3;
+   background-color: transparent;
+   color: var(--savoy-blue);
+
+   &:hover {
+      text-decoration: underline;
+   }
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.replyInput {
+   display: flex;
+   gap: 16px;
+
+   textarea {
+      columns: auto;
+      width: 100%;
+   }
+
+   grid-column: 2/3;
+
+   @media(max-width: 425px) {
+      grid-column: 1/3;
+   }
+}
+
+.replyBtn {
+   padding: 12.5px 24px;
+   background-color: var(--veronica);
+   color: var(--white);
+   border-radius: 10px;
+   white-space: nowrap;
+   height: fit-content;
+}

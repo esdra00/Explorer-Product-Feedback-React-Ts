@@ -1,0 +1,10 @@
+.goBack {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+   color: var(--glaucous);
+
+   &:hover {
+      text-decoration: underline;
+   }
+}

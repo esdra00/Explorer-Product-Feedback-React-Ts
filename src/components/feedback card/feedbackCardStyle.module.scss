@@ -1,0 +1,115 @@
+.container {
+   height: 151px;
+   // width: 825px;
+   width: auto;
+   border-radius: 10px;
+   display: flex;
+   padding: 28px 32px;
+   background-color: var(--white);
+   margin-bottom: 18px;
+
+
+
+   @media (min-width: 426px) and (max-width: 768px) {
+      width: auto;
+   }
+
+   @media(max-width: 425px) {
+      width: 327px;
+      height: 200px;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      row-gap: 16px;
+
+      padding: 24px 25px;
+      margin-inline: auto;
+
+      * {
+         font-size: 13px;
+      }
+   }
+}
+
+.upvote {
+   height: 53px;
+   width: 40px;
+   border-radius: 10px;
+   margin-right: 40px;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+
+   background-color: var(--background-card);
+   color: var(--marian-blue);
+
+   &:hover {
+      background-color: rgb(207, 215, 255);
+   }
+
+   &:hover.upvoted {
+      background-color: var(--savoy-blue);
+   }
+
+   @media(max-width: 425px) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      width: 69px;
+      height: 32px;
+   }
+}
+
+.upvoted {
+   color: var(--white);
+   background-color: var(--savoy-blue);
+
+   img {
+      filter: invert(100%) sepia(0%) saturate(7442%) hue-rotate(227deg) brightness(113%) contrast(106%);
+   }
+}
+
+.txt_w {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   @media(max-width: 425px) {
+      gap: 9px;
+      grid-column: 1/3;
+      grid-row: 1/2;
+   }
+}
+
+.title {
+   color: var(--marian-blue);
+
+   &:hover {
+      cursor: pointer;
+      color: var(--savoy-blue);
+   }
+}
+
+.desc {
+   color: var(--glaucous);
+}
+
+.category {
+   width: fit-content;
+   color: var(--savoy-blue);
+   padding: 5px 16px;
+   border-radius: 10px;
+   background-color: var(--background-card);
+   text-transform: capitalize;
+}
+
+.comments {
+   display: flex;
+   gap: 8px;
+   align-items: center;
+   margin-left: auto;
+   font-weight: 800;
+   color: var(--marian-blue);
+}

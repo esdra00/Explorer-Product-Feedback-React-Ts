@@ -1,0 +1,60 @@
+@import "./mixins";
+
+:root {
+   font-family: 'Jost', sans-serif;
+
+   // Colors
+   --veronica: rgb(173, 31, 234);
+   --savoy-blue: rgb(70, 97, 230);
+   --delft-blue: rgb(55, 63, 104);
+   --white: rgb(255, 255, 255);
+
+   --background-card: rgb(242, 244, 255);
+   --background-body: rgba(219, 225, 254, 0.656);  // original: rgb(247, 248, 253
+   --marian-blue: rgb(58, 67, 116);
+   --glaucous: rgb(100, 113, 150);
+
+   --atomic-tangerine: rgb(244, 159, 133);
+   --maya-blue: rgb(98, 188, 250);
+}
+
+body {
+   background-color: var(--background-body);
+}
+
+h1 {
+   @include h1;
+}
+
+h3 {
+   @include h3;
+}
+
+h4 {
+   @include h4
+}
+
+p {
+   color: var(--glaucous);
+}
+
+button,
+input {
+   border: 0;
+   outline: none;
+   margin: 0;
+   padding: 0;
+   background-color: transparent;
+   color: inherit;
+   cursor: pointer;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+}
