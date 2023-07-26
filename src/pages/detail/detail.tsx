@@ -15,7 +15,13 @@ export default function Detail() {
 			<nav className={style.nav}>
 				<GoBack />
 				<button className={style.edit}>
-					<Link to={data?.id ? `/edit/${data.id}` : "#"}>
+					<Link
+						to={
+							data?.id
+								? `/Explorer-Product-Feedback-React-Ts/edit/${data.id}`
+								: "#"
+						}
+					>
 						<h4>Edit Feedback</h4>
 					</Link>
 				</button>

@@ -29,7 +29,13 @@ export default function FeedBackCard({
 				<h4>{upvoted ? upvotes + 1 : upvotes}</h4>
 			</button>
 			<div className={style.txt_w}>
-				<Link to={id ? `/detail/${id}` : "#"}>
+				<Link
+					to={
+						id
+							? `/Explorer-Product-Feedback-React-Ts/detail/${id}`
+							: "#"
+					}
+				>
 					<h3 className={style.title}>{title}</h3>
 				</Link>
 				<p className={style.desc}>{description}</p>

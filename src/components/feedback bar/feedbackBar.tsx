@@ -33,7 +33,7 @@ export default function Bar({suggestions}: {suggestions: number}) {
 					<option>Least Comments</option>
 				</select>
 			</div>
-			<Link to={"/new"} className={style.cta}>
+			<Link to={"/Explorer-Product-Feedback-React-Ts/new"} className={style.cta}>
 				<img src={IconPlus} alt="Add Feedback" />
 				<span>Add Feedback</span>
 			</Link>
