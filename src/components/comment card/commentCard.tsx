@@ -16,7 +16,7 @@ export default function CommentCard({
 		<>
 			<div className={style.comment}>
 				<img
-					src={image}
+					src={`/Explorer-Product-Feedback-React-Ts/${image}`}
 					alt="user image"
 					height={40}
 					width={40}
